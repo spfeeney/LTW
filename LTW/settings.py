@@ -26,7 +26,7 @@ SECRET_KEY = 'skuekd&*1-y_3$bkjyi_iks=33qcd!yl&b-ba-8xxymbsvzu+y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 if ON_HEROKU == True:
-  DEBUG = False
+    DEBUG = False
 else:
     DEBUG = True
 
@@ -126,4 +126,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(MAIN_DIR, 'static'),)
-STATIC_ROOTS = 'staticfiles'
+STATIC_ROOT = 'staticfiles'
